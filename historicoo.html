@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico - Glamour</title>
+    <link rel="stylesheet" href="historico.css">
+</head>
+<body>
+
+<header>
+    <a href="proagendamento.html" class="btn-voltar">←</a>
+    <div class="logo"><span>GLAM</span><span>OUR</span></div>
+</header>
+
+<section>
+    <h2>agendamentos futuros</h2>
+    <div class="card">
+        <div class="titulo">Pedicure</div>
+        <div class="detalhes">Profissional: Evandra Massielo</div>
+        <div class="detalhes">sexta, 30 de jul - 17h00</div>
+        <button class="feedback-btn" disabled>Feedback</button>
+    </div>
+
+    <div class="card">
+        <div class="titulo">Escova, Corte</div>
+        <div class="detalhes">Profissional: Adriano Estevão</div>
+        <div class="detalhes">quinta, 29 de jul - 17h00</div>
+        <button class="feedback-btn" disabled>Feedback</button>
+    </div>
+
+    <h2>agendamentos anteriores</h2>
+    <div class="card">
+        <div class="titulo">Corte</div>
+        <div class="detalhes">Profissional: Adriano Estevão</div>
+        <div class="detalhes">segunda, 20 de jun - 17h00</div>
+        <button class="feedback-btn" onclick="openModal()">Feedback</button>
+    </div>
+
+    <div class="card">
+        <div class="titulo">Corte</div>
+        <div class="detalhes">Profissional: Adriano Estevão</div>
+        <div class="detalhes">segunda, 20 de jun - 17h00</div>
+        <button class="feedback-btn" onclick="openModal()">Feedback</button>
+    </div>
+</section>
+
+<div class="modal" id="feedbackModal">
+    <div class="modal-content">
+        <h3>Deixe seu feedback</h3>
+        <div class="stars" id="starRating">
+            <span onclick="rate(1)">★</span>
+            <span onclick="rate(2)">★</span>
+            <span onclick="rate(3)">★</span>
+            <span onclick="rate(4)">★</span>
+            <span onclick="rate(5)">★</span>
+        </div>
+        <textarea placeholder="Escreva seu comentário..."></textarea>
+        <button class="send-btn" onclick="sendFeedback()">Enviar</button>
+    </div>
+</div>
+
+<footer>
+    <a href="#catalogo"><br>Catálogo</a>
+    <a href="proagendamento.html"><br>Agendamentos</a>
+    <a href="#perfil"><br>Perfil</a>
+</footer>
+
+<script src="historico.js"></script>
+
+</body>
+</html>
