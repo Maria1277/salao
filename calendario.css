@@ -62,3 +62,17 @@ h2 {
     font-weight: bold;
     font-size: 18px;
 }
+/* Botão voltar */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #e57373;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
